@@ -1,0 +1,6 @@
+{
+  "name": "All In One Academy Jorhat - Demo Class Registration & Google Forms Portal",
+  "description": "Professional Google Form and lead capture portal for All In One Academy Jorhat - Government Competitive Exam Preparation (ADRE, SSC, Banking, Railway).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

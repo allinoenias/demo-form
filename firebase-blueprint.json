@@ -1,0 +1,34 @@
+{
+  "entities": {
+    "StudentLead": {
+      "title": "StudentLead",
+      "description": "Government exam demo class lead registration for All In One Academy Jorhat",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "fullName": { "type": "string", "maxLength": 128 },
+        "phone": { "type": "string", "maxLength": 20 },
+        "exam": { "type": "string", "maxLength": 64 },
+        "examOther": { "type": "string", "maxLength": 128 },
+        "prepLevel": { "type": "string", "maxLength": 64 },
+        "difficultSubjects": { "type": "array", "items": { "type": "string" } },
+        "challenges": { "type": "array", "items": { "type": "string" } },
+        "preferredTiming": { "type": "string", "maxLength": 64 },
+        "timingCustom": { "type": "string", "maxLength": 128 },
+        "demoAttendance": { "type": "string", "maxLength": 64 },
+        "source": { "type": "string", "maxLength": 64 },
+        "sourceOther": { "type": "string", "maxLength": 128 },
+        "submittedAt": { "type": "string", "format": "date-time" },
+        "status": { "type": "string", "maxLength": 32 },
+        "notes": { "type": "string", "maxLength": 500 }
+      },
+      "required": ["fullName", "phone", "exam", "prepLevel", "preferredTiming", "submittedAt"]
+    }
+  },
+  "firestore": {
+    "/student_leads/{leadId}": {
+      "schema": "StudentLead",
+      "description": "Student leads registered for free demo classes"
+    }
+  }
+}
